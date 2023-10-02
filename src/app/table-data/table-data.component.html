@@ -1,0 +1,19 @@
+<div class="table-data">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Duplicates</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let nameData of data | namevariation">
+          <td [style.background-color]="nameData.bgColor">
+            {{ nameData.name }}
+          </td>
+          <td>{{ nameData.count }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
